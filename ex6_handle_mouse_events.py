@@ -18,6 +18,7 @@ def click_event(event,x,y,flags,param):
 
     #For right button click
     if event == cv2.EVENT_RBUTTONDOWN:
+        #Extracting colour values from that point
         #0 = blue channel, 1 =  green channel and 2 = red channel (BGR format)
         blue = img[y,x,0]
         green = img[y,x,1]
