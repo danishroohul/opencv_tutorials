@@ -9,8 +9,8 @@ print(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 print(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 #Set the video frame width and height to desired values
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 100)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 100)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1000)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1000)
 
 #Print the frame width and height values
 print(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -33,7 +33,7 @@ while cap.isOpened():
     else:
         break
 
-#Release the cap opject
+#Release the cap object
 cap.release()
 
 #Close all windows of camera
